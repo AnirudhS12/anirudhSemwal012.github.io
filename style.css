@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* wo things jo common hai */
+.italic 
+{
+    font-style: italic;
+}
+.bold 
+{
+    font-size: 40px;
+    font-weight: bolder;
+    color: yellow;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn 
+{
+    text-align: center;
+    padding: 10px;
+    background-color: #ff0157;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.live 
+{
+    color: #ff0157 !important;
+}
+
+span
+{
+    color: #ff0157;
+}
+
+.center
+{
+    text-align: center;
+}
+
+section
+{
+    padding: 80px;
+} 
+
+/* whole top navigation bar  */
+
+header
+{
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.sticky
+{
+    background-color: white;
+    color: black;
+    box-shadow: 5px 2px 4px 3px rgba(63, 61, 61, 0.4);
+}
+
+header.sticky .navigation li a
+{
+    color: black;
+}
+
+header.sticky .menuToggle
+{
+    filter: invert(1);
+}
+
+header .logo
+{
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li 
+{
+    margin-right: 30px;
+    font-size: 20px;
+    list-style-type: none;
+    font-weight: bold;
+}
+header .navigation li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+header .navigation li a:hover
+{
+    color: #ff0157;
+    cursor: pointer;
+}
+
+/* main image wala section  */ 
+
+.banner
+{
+    color: white;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg1.jpeg);
+    background-size: cover;
+}
+
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2
+{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.banner .content p
+{
+    font-size: 40px;
+}
+
+
+/* resources Container  */
+
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myResources .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.box
+{
+    width: 300px;
+    margin: 10px 10px ;
+    background-color: white;
+    padding: 20px 10px ;
+    box-shadow: 10px 10px 4px rgba(63, 61, 61, 0.4);
+}
+
+.imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+img
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.text
+{
+    padding: 10px;
+}
+
+.text h3
+{
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+}
+
+.myResources h2 
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    font-weight: bolder;
+}
+
+
+/* footer container   */
+
+.footer
+{
+    padding: 7px;
+    background-color: black;
+    color: white;
+}
+
+.footer .content p
+{
+    text-align: center;
+}
+
+/* hamburger menu  */
+
+@media ( max-width: 680px )
+{
+    header .navigation
+    {
+        display: none;
+    }
+
+    .menuToggle
+    {
+        margin-right: 20px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active
+    {
+        background: url(close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+    }
+
+    .don
+    {
+        filter: invert(1);
+    }
+
+    .navigation.active 
+    {
+        width: 100%;
+        height: 50%;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        background: rgb(145, 142, 142);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        font-size: 30px;
+    }
+
+    .navigation.active li 
+    {
+        padding: 10px;
+    }
+}
+
+/* responsive */ 
+
+@media ( max-width: 800px )
+{
+    .about 
+    {
+        padding: 50px !important;
+    }
+
+    .about .row
+    {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .row .col50
+    {
+        width: 80% !important;
+    }
+}
+
+@media ( max-width: 500px )
+{
+
+    .about 
+    {
+        width: 80vw;
+        padding: 20px !important;
+    }
+
+    .about .row
+    {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .row .col50
+    {
+        width: 100% !important;
+    }
+
+
+
+    .banner .content h2
+    {
+        font-size: 30px;
+    }
+
+    .banner .content p
+    {
+        font-size: 20px;
+    }
+
+    .myResources h2 
+    {
+        font-size: 25px;
+    }
+}
+
+@media ( max-width: 350px )
+{
+  
+    section 
+    {
+        padding: 5px;
+    }
+   
+    .about 
+    {
+        width: 70vw;
+    }
+
+
+    header .logo
+    {
+        font-size: 15px;
+    }
+}
+
+/* about file  */ 
+
+.bg
+{
+    background-color: black;
+}
+
+.about
+{
+    margin-top: 100px;
+}
+
+.about .row
+{
+    background-color: blue;
+    padding: 40px 20px; 
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .row .col50
+{
+    width: 48%;
+}
+
+.about .row .col50 .imgBx
+{
+    position: relative;
+    width: 100%;  
+}
+
+.about .row .col50 .imgBx img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.about .row .col50 .title
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .row .col50 .title h2
+{
+    font-size: 40px;
+    color: yellow;
+
+}
+
+
+/* contact Form  */ 
+
+.contact
+{
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    background: url(walpaper3.jpeg);
+    background-size: cover;
+    background-blend-mode:color-dodge;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .title h2 
+{
+    font-size: 50px;
+    text-decoration: underline;
+}
+.contact .title p
+{
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+.contact .content
+{
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 70px 40px 40px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .content input,textarea
+{
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+}
+
+.contact .content input[type="submit"]
+{
+   padding: 14px 20px;
+    background-color: #ff0157;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.contact .content input[type="submit"]:hover
+{
+   letter-spacing: 3px;
+   transition: .5s;
+}
+
+/* Projects page  */ 
+
+.bg1
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Covid Tracker App*/ 
+
+.covidTracker
+{
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    min-height: 100vh;
+}
+
+.covidTracker .title h1 
+{
+    font-size: 40px;
+    margin-top: 100px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.covidData 
+{
+    display: flex;
+    padding: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.covidData h1
+{
+    font-family: 'Kirang Haerang', cursive;
+}
+.corona 
+{
+    padding: 10px 15px;
+    margin: 10px;
+    box-shadow: 3px 3px 6px 2px  white;
+}
+
+.totalCases
+{
+    background-color: purple;
+    height: 200px;
+    width: 300px;
+}
+
+.totalDeaths
+{
+    background-color: rgb(7, 102, 4);
+    height: 200px;
+    width: 300px;
+}
+
+.info 
+{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 10px 5px 4px black;
+    font-weight: bolder;
+}
+
+.totalRecovered
+{
+    background-color: rgb(155, 152, 8);
+    height: 200px;
+    width: 300px;
+}
+
+.newCases
+{
+    background-color: rgb(122, 52, 6);
+    height: 200px;
+    width: 300px;
+}
+
+.newDeaths
+{
+    background-color: rgb(23, 158, 211);
+    height: 200px;
+    width: 300px;
+}
+
+.newRecovered
+{
+    background-color: rgb(60, 8, 119);
+    height: 200px;
+    width: 300px;
+}
+
+/* Weather Update  */
+
+.weatherUpdate 
+{
+    position: relative;
+    margin-top: 100px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: burlywood;
+}
+
+.weatherUpdate .weathermain 
+{
+    font-family: 'Kirang Haerang', cursive;
+    color: black;
+    margin-bottom: 100px;
+}
+.weatherUpdate  input 
+{
+    padding: 10px;
+}
+
+.weatherUpdate .submit 
+{
+    background-color: #ff0157;
+    outline: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.weatherUpdate .submit:hover
+{
+   letter-spacing: 3px;
+   transition: .5s;
+}
+
+.desc1, .temp1 , .name1
+{
+    font-size: 30px;
+    font-family: 'Kirang Haerang', cursive;
+    font-weight: bolder;
+
+    color: black;
+} 

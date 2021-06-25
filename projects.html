@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Projects Page</title>
+</head>
+
+<body>
+    <header class="bg bg1">
+        <div class="logo">
+            <h1> <span>A</span>nirudh<span>C</span>odes</h1>
+        </div>
+
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li class="item"> <a href="index.html">Home</a></li>
+            <li class="item"> <a class="live" href="projects.html">Projects</a> </li>
+            <li class="item"> <a href="about.html">About</a></li>
+            <li class="item"> <a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="covidTracker">
+        <div class="title">
+            <h1 class="center"> See latest updates of Corona Virus in <span>India</span></h1>
+        </div>
+
+        <div class="covidData">
+            <div class="totalCases corona">  <h1 class="center">Total Cases</h1>
+                <h2 class="totalCasesinfo info"></h2>
+            </div>
+            <div class="totalDeaths corona">  <h1 class="center">Total Deaths</h1>
+                <h2 class="totalDeathsinfo  info"></h2>
+            </div>
+            <div class="totalRecovered corona">  <h1 class="center">Total Recovered</h1>
+                <h2 class="totalRecoveredinfo info"></h2>
+            </div>
+            <div class="newCases corona">  <h1 class="center">New Cases</h1>
+                <h2 class="newCasesinfo info"></h2>
+            </div>
+            <div class="newDeaths corona">  <h1 class="center">New Deaths</h1>
+                <h2 class="newDeathsinfo info"></h2>
+            </div>
+            <div class="newRecovered corona">  <h1 class="center">New Recovered</h1>
+                <h2 class="newRecoveredinfo info"></h2>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div class="weatherUpdate">
+        <h1 class="center weathermain">Enter Your City Name and Get Weather Updates</h1>
+        <div class="input">
+            <input class="inputValue" type="text" placeholder="Enter Your City">
+            <input class="submit" type="submit" value="Submit">
+        </div>
+
+        <div class="display">
+            <span class="name1">City :</span> <h1 class="name"></h1>
+            <span class="desc1">Description :</span> <h1 class="desc"></h1>
+            <span class="temp1">Temperature :</span> <h1 class="temp"></h1>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="content">
+            <p>Copyright &copy; 2020-2021 <span> anirudhsemwal.com</span>. All Rights Reserved | Privacy Policy</p>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
