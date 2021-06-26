@@ -289,6 +289,10 @@ img
     {
         padding: 10px;
     }
+    .box
+    {
+        margin: 0px 10px 
+    }
 }
 
 /* responsive */ 
