@@ -238,7 +238,11 @@ img
     {
         display: none;
     }
-
+        
+    section 
+    {
+        padding : 10px ;
+    }
     .menuToggle
     {
         margin-right: 20px;
