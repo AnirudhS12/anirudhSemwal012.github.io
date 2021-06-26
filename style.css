@@ -234,6 +234,11 @@ img
 
 @media ( max-width: 680px )
 {
+     section 
+    {
+        padding: 20px;
+    }
+    
     header .navigation
     {
         display: none;
