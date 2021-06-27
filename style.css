@@ -280,7 +280,7 @@ img
         height: 50%;
         position: fixed;
         top: 50px;
-        left: 0;
+        left: -20px;
         background: rgb(145, 142, 142);
         display: flex;
         justify-content: center;
