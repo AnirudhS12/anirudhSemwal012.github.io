@@ -28,12 +28,12 @@ async function getCovidapi() {
         let newDeaths = document.querySelector('.newDeathsinfo')
         let newRecovered = document.querySelector('.newRecoveredinfo')
 
-        totalCases.innerHTML = jsData.Countries[76].TotalConfirmed;
-        totalDeaths.innerHTML = jsData.Countries[76].TotalDeaths;
-        totalRecovered.innerHTML = jsData.Countries[76].TotalRecovered;
-        newCases.innerHTML = jsData.Countries[76].NewConfirmed;
-        newDeaths.innerHTML = jsData.Countries[76].NewDeaths;
-        newRecovered.innerHTML = jsData.Countries[76].NewRecovered;
+        totalCases.innerHTML = jsData.Countries[75].TotalConfirmed;
+        totalDeaths.innerHTML = jsData.Countries[75].TotalDeaths;
+        totalRecovered.innerHTML = jsData.Countries[75].TotalRecovered;
+        newCases.innerHTML = jsData.Countries[75].NewConfirmed;
+        newDeaths.innerHTML = jsData.Countries[75].NewDeaths;
+        newRecovered.innerHTML = jsData.Countries[75].NewRecovered;
 }
 
 getCovidapi();
